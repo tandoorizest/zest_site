@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TandooriZest Restaurant Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .category-nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .category-nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 8px 12px;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .category-nav a:hover {
+            background-color: #ddd;
+        }
+        .menu-section {
+            margin-bottom: 30px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            border-radius: 8px;
+        }
+        .menu-section h2 {
+            color: #444;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .price-col {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Restaurant Menu - Menuthing</h1>
+
+    <!-- Category Navigation -->
+    <div class="category-nav">
+        <a href="#veg-thali">Veg Thali</a>
+        <a href="#deluxe-thali">Deluxe Thali</a>
+        <a href="#non-veg-thali">Non-Veg Thali</a>
+        <a href="#rice-dishes">Rice Dishes</a>
+        <a href="#momos">Momos</a>
+        <a href="#non-veg-main-course">Non-Veg Main Course</a>
+        <a href="#mutton-dishes">Mutton Dishes</a>
+        <a href="#chinese">Chinese Cuisine</a>
+        <a href="#non-veg-starters">Non-Veg Starters</a>
+        <a href="#soups">Soups</a>
+        <a href="#veg-starters">Veg Starters</a>
+        <a href="#tandoori-chaap">Tandoori & Chaap</a>
+        <a href="#rolls">Rolls</a>
+        <a href="#veg-main-course">Veg Main Course</a>
+        <a href="#breads">Breads</a>
+    </div>
+
+    <!-- Veg Thali Section -->
+    <div id="veg-thali" class="menu-section">
+        <h2>Veg Thali</h2>
+        <table>
+            <tr><td>Dal Makhani + Paneer Lababdar, 2 Butter Naan / 4 Butter Roti, Raita</td><td class="price-col">₹120</td></tr>
+        </table>
+    </div>
+
+    <!-- Deluxe Thali Section -->
+    <div id="deluxe-thali" class="menu-section">
+        <h2>Deluxe Thali</h2>
+        <table>
+            <tr><td>Dal Makhani + Shahi Paneer, Mix Veg, Raita, 2 Butter Naan / 4 Butter Roti</td><td class="price-col">₹160</td></tr>
+        </table>
+    </div>
+
+    <!-- Non-Veg Thali Section -->
+    <div id="non-veg-thali" class="menu-section">
+        <h2>Non-Veg Thali</h2>
+        <table>
+            <tr><td>Butter Chicken / Tawa Chicken, Dal Makhani + Paneer, Rice, Raita, 2 Butter Naan / 2 Lachha Parantha</td><td class="price-col">₹280</td></tr>
+            <tr><td>Butter Chicken / Tawa Chicken, Dal Makhani + Paneer + Mutton, Rice, Raita, 2 Butter Naan / 2 Lachha Parantha</td><td class="price-col">₹340</td></tr>
+        </table>
+    </div>
+
+    <!-- Rice Dishes Section -->
+    <div id="rice-dishes" class="menu-section">
+        <h2>Rice Dishes</h2>
+        <table>
+            <tr><td>Veg Pulao</td><td class="price-col">₹150</td></tr>
+            <tr><td>Plain Rice</td><td class="price-col">₹100</td></tr>
+            <tr><td>Jeera Rice</td><td class="price-col">₹130</td></tr>
+            <tr><td>Peas Pulao</td><td class="price-col">₹140</td></tr>
+        </table>
+    </div>
+
+    <!-- Momos Section -->
+    <div id="momos" class="menu-section">
+        <h2>Momos</h2>
+        <table>
+            <tr><td>Veg Momos</td><td class="price-col">₹100</td></tr>
+            <tr><td>Paneer Momos</td><td class="price-col">₹120</td></tr>
+            <tr><td>Chicken Momos</td><td class="price-col">₹140</td></tr>
+            <tr><td>Tandoori Momos</td><td class="price-col">₹140</td></tr>
+            <tr><td>Kurkure Momos</td><td class="price-col">₹120</td></tr>
+        </table>
+    </div>
+
+    <!-- Non-Veg Main Course Section -->
+<div id="non-veg-main-course" class="menu-section">
+    <h2>Non-Veg Main Course</h2>
+    <table>
+        <tr><td>Chicken Curry</td><td class="price-col">Half ₹370 / Full ₹570</td></tr>
+        <tr><td>Butter Chicken</td><td class="price-col">Half ₹390 / Full ₹610</td></tr>
+        <tr><td>Chicken Masala</td><td class="price-col">Half ₹380 / Full ₹590</td></tr>
+        <tr><td>Chicken Kali Mirch</td><td class="price-col">Half ₹390 / Full ₹600</td></tr>
+        <tr><td>Chicken-Do-Pyaza</td><td class="price-col">Half ₹390 / Full ₹600</td></tr>
+        <tr><td>Chicken Rara</td><td class="price-col">Half ₹410 / Full ₹630</td></tr>
+        <tr><td>Chicken Labadar</td><td class="price-col">Half ₹390 / Full ₹600</td></tr>
+        <tr><td>Kadhai Chicken</td><td class="price-col">Half ₹390 / Full ₹600</td></tr>
+        <tr><td>Chicken Handi</td><td class="price-col">Half ₹410 / Full ₹630</td></tr>
+        <tr><td>Chicken Punjabi</td><td class="price-col">Half ₹410 / Full ₹630</td></tr>
+    </table>
+</div>
+
+    <!-- Mutton Dishes Section -->
+<div id="mutton-dishes" class="menu-section">
+    <h2>Mutton Dishes</h2>
+    <table>
+        <tr><td>Mutton Curry</td><td class="price-col">Half ₹280 / Full ₹480</td></tr>
+        <tr><td>Mutton Masala</td><td class="price-col">Half ₹300 / Full ₹490</td></tr>
+        <tr><td>Mutton Rara</td><td class="price-col">Half ₹320 / Full ₹520</td></tr>
+        <tr><td>Mutton Handi</td><td class="price-col">Half ₹330 / Full ₹540</td></tr>
+    </table>
+</div>
+
+    <!-- Chinese Cuisine Section -->
+<div id="chinese" class="menu-section">
+    <h2>Chinese Cuisine</h2>
+    <table>
+        <tr><td>Veg Noodles</td><td class="price-col">Half ₹80 / Full ₹130</td></tr>
+        <tr><td>Hakka Noodle</td><td class="price-col">₹90</td></tr>
+        <tr><td>Chilli Garlic Noodle</td><td class="price-col">₹90</td></tr>
+        <tr><td>Singapuri Rice</td><td class="price-col">₹140</td></tr>
+        <tr><td>Chicken Noodles</td><td class="price-col">Half ₹140 / Full ₹170</td></tr>
+        <tr><td>Veg Fried Rice</td><td class="price-col">Half ₹90 / Full ₹140</td></tr>
+        <tr><td>Chicken Fried Rice</td><td class="price-col">Half ₹110 / Full ₹150</td></tr>
+        <tr><td>Chicken Egg Fried Rice</td><td class="price-col">Half ₹120 / Full ₹210</td></tr>
+    </table>
+</div>
+
+    <!-- Non-Veg Starters Section -->
+<div id="non-veg-starters" class="menu-section">
+    <h2>Non-Veg Starters</h2>
+    <table>
+        <tr><td>Tandoori Chicken</td><td class="price-col">Half ₹240 / Full ₹380</td></tr>
+        <tr><td>Afghani Chicken</td><td class="price-col">Half ₹250 / Full ₹390</td></tr>
+        <tr><td>Chicken Tikka</td><td class="price-col">Half ₹180 / Full ₹270</td></tr>
+        <tr><td>Chicken Malai Tikka</td><td class="price-col">Half ₹190 / Full ₹280</td></tr>
+        <tr><td>Mutton Seekh Kabab</td><td class="price-col">Half ₹180 / Full ₹270</td></tr>
+        <tr><td>Chicken Seekh Kabab</td><td class="price-col">₹160</td></tr>
+        <tr><td>Tandoori Wings</td><td class="price-col">₹180</td></tr>
+        <tr><td>Tandoori Tangri (4 pieces)</td><td class="price-col">₹200</td></tr>
+    </table>
+</div>
+
+    <!-- Soups Section -->
+<div id="soups" class="menu-section">
+    <h2>Soups</h2>
+    <table>
+        <tr><td>Veg Talumin Soup</td><td class="price-col">₹110</td></tr>
+        <tr><td>Manchow Soup</td><td class="price-col">₹110</td></tr>
+        <tr><td>Hot & Sour Soup</td><td class="price-col">₹110</td></tr>
+        <tr><td>Chicken Manchow Soup</td><td class="price-col">₹130</td></tr>
+        <tr><td>Chicken Hot & Sour Soup</td><td class="price-col">₹130</td></tr>
+        <tr><td>Chicken Talumin Soup</td><td class="price-col">₹140</td></tr>
+    </table>
+</div>
+
+    <!-- Veg Starters Section -->
+<div id="veg-starters" class="menu-section">
+    <h2>Veg Starters</h2>
+    <table>
+        <tr><td>Chilli Potato</td><td class="price-col">₹100</td></tr>
+        <tr><td>Honey Chilli Potato</td><td class="price-col">₹120</td></tr>
+        <tr><td>Chilli Gobhi</td><td class="price-col">₹90</td></tr>
+        <tr><td>Veg Spring Roll</td><td class="price-col">₹80</td></tr>
+        <tr><td>Paneer Chilli (Dry/Gravy)</td><td class="price-col">₹140</td></tr>
+        <tr><td>Chilli Mushroom</td><td class="price-col">₹140</td></tr>
+        <tr><td>Paneer Manchurian (Dry/Gravy)</td><td class="price-col">₹140</td></tr>
+        <tr><td>Veg Manchurian (Dry/Gravy)</td><td class="price-col">₹120</td></tr>
+        <tr><td>Chilli Chaap</td><td class="price-col">₹130</td></tr>
+        <tr><td>French Fry</td><td class="price-col">₹70</td></tr>
+    </table>
+</div>
+
+    <!-- Tandoori & Other Chaap Section -->
+<div id="tandoori-chaap" class="menu-section">
+    <h2>Tandoori & Other Chaap</h2>
+    <table>
+        <tr><td>Tandoori Chaap</td><td class="price-col">₹110</td></tr>
+        <tr><td>Malai Chaap</td><td class="price-col">₹130</td></tr>
+        <tr><td>Achari Chaap</td><td class="price-col">₹140</td></tr>
+        <tr><td>Stuffed Chaap</td><td class="price-col">₹140</td></tr>
+        <tr><td>Paneer Tikka</td><td class="price-col">Half ₹140 / Full ₹230</td></tr>
+        <tr><td>Malai Paneer Tikka</td><td class="price-col">Half ₹150 / Full ₹240</td></tr>
+        <tr><td>Mushroom Tikka</td><td class="price-col">₹240</td></tr>
+        <tr><td>Dahi ke Kabab</td><td class="price-col">₹230</td></tr>
+        <tr><td>Dahi ke Sholey</td><td class="price-col">₹230</td></tr>
+    </table>
+</div>
+
+    <!-- Rolls Section -->
+<div id="rolls" class="menu-section">
+    <h2>Rolls</h2>
+    <table>
+        <tr><td>Tandoori Chaap Roll</td><td class="price-col">₹170</td></tr>
+        <tr><td>Tandoori Malai Chaap Roll</td><td class="price-col">₹180</td></tr>
+        <tr><td>Paneer Malai Tikka Roll</td><td class="price-col">₹190</td></tr>
+        <tr><td>Paneer Tikka Roll</td><td class="price-col">₹190</td></tr>
+        <tr><td>Chicken Tikka Roll</td><td class="price-col">₹180</td></tr>
+        <tr><td>Chicken Malai Tikka Roll</td><td class="price-col">₹190</td></tr>
+        <tr><td>Mutton Seek Roll</td><td class="price-col">₹190</td></tr>
+        <tr><td>Chicken Seek Roll</td><td class="price-col">₹160</td></tr>
+    </table>
+</div>
+
+    <!-- Veg Main Course Section -->
+<div id="veg-main-course" class="menu-section">
+    <h2>Veg Main Course</h2>
+    <table>
+        <tr><td>Dal Tadka Special</td><td class="price-col">Half ₹120 / Full ₹200</td></tr>
+        <tr><td>Dal Makhani Special</td><td class="price-col">Half ₹140 / Full ₹220</td></tr>
+        <tr><td>Shahi Paneer</td><td class="price-col">Half ₹160 / Full ₹230</td></tr>
+        <tr><td>Kadhai Paneer</td><td class="price-col">Half ₹160 / Full ₹230</td></tr>
+        <tr><td>Paneer Lababdar</td><td class="price-col">Half ₹160 / Full ₹230</td></tr>
+        <tr><td>Paneer Do Pyaza</td><td class="price-col">Half ₹160 / Full ₹230</td></tr>
+        <tr><td>Paneer Butter Masala</td><td class="price-col">Half ₹160 / Full ₹230</td></tr>
+        <tr><td>Palak Paneer</td><td class="price-col">Half ₹140 / Full ₹210</td></tr>
+        <tr><td>Matar Mushroom</td><td class="price-col">Half ₹140 / Full ₹210</td></tr>
+        <tr><td>Mushroom Masala</td><td class="price-col">Half ₹140 / Full ₹220</td></tr>
+        <tr><td>Soya Chaap</td><td class="price-col">Half ₹120 / Full ₹200</td></tr>
+        <tr><td>Mix Veg</td><td class="price-col">Half ₹130 / Full ₹190</td></tr>
+        <tr><td>Chana Masala</td><td class="price-col">Half ₹140 / Full ₹200</td></tr>
+        <tr><td>Paneer Tikka Masala</td><td class="price-col">Half ₹160 / Full ₹230</td></tr>
+        <tr><td>Paneer Bhurji</td><td class="price-col">Half ₹160 / Full ₹230</td></tr>
+    </table>
+</div>
+
+    <!-- Breads Section -->
+<div id="breads" class="menu-section">
+    <h2>Breads</h2>
+    <table>
+        <tr><td>Tandoori Roti</td><td class="price-col">₹15</td></tr>
+        <tr><td>Tandoori Butter Roti</td><td class="price-col">₹20</td></tr>
+        <tr><td>Rumali Roti</td><td class="price-col">₹10</td></tr>
+        <tr><td>Missi Roti</td><td class="price-col">₹30</td></tr>
+        <tr><td>Lachha Parantha</td><td class="price-col">₹40</td></tr>
+        <tr><td>Pudina Parantha</td><td class="price-col">₹40</td></tr>
+        <tr><td>Green Chilli Parantha</td><td class="price-col">₹40</td></tr>
+        <tr><td>Aloo Parantha</td><td class="price-col">₹50</td></tr>
+        <tr><td>Aloo Pyaz Parantha</td><td class="price-col">₹60</td></tr>
+        <tr><td>Gobhi Parantha</td><td class="price-col">₹50</td></tr>
+        <tr><td>Paneer Parantha</td><td class="price-col">₹70</td></tr>
+        <tr><td>Paneer Pyaz Parantha</td><td class="price-col">₹80</td></tr>
+        <tr><td>Stuffed Parantha</td><td class="price-col">₹80</td></tr>
+        <tr><td>Plain Naan</td><td class="price-col">₹30</td></tr>
+        <tr><td>Butter Naan</td><td class="price-col">₹40</td></tr>
+        <tr><td>Aloo Naan</td><td class="price-col">₹60</td></tr>
+        <tr><td>Gobhi Naan</td><td class="price-col">₹60</td></tr>
+        <tr><td>Stuffed Naan</td><td class="price-col">₹80</td></tr>
+        <tr><td>Paneer Naan</td><td class="price-col">₹80</td></tr>
+        <tr><td>Garlic Naan</td><td class="price-col">₹70</td></tr>
+    </table>
+</div>
+
+
+    <!-- Continue Adding Other Sections in a Similar Format -->
+    <!-- e.g., Non-Veg Main Course, Mutton Dishes, Chinese Cuisine, Non-Veg Starters, Soups, etc. -->
+
+</body>
+</html>
