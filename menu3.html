@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TandooriZest Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f3f4f6;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #D95A33;
+            font-size: 2.5em;
+        }
+        .category-nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .category-nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 10px 15px;
+            background-color: #D95A33;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .category-nav a:hover {
+            background-color: #b0472b;
+        }
+        .menu-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .menu-section h2 {
+            color: #D95A33;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #D95A33;
+            padding-bottom: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .price-col {
+            text-align: right;
+            font-weight: bold;
+            color: #D95A33;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>TandooriZest Menu</h1>
+
+    <!-- Category Navigation -->
+    <div class="category-nav">
+        <a href="#veg-thali">Veg Thali</a>
+        <a href="#deluxe-thali">Deluxe Thali</a>
+        <a href="#non-veg-thali">Non-Veg Thali</a>
+        <a href="#rice">Rice</a>
+        <a href="#momos">Momos</a>
+        <a href="#non-veg-main-course">Non-Veg Main Course</a>
+        <a href="#mutton-dishes">Mutton Dishes</a>
+        <a href="#noodles">Noodles</a>
+        <a href="#chinese">Chinese Cuisine</a>
+        <a href="#non-veg-starters">Non-Veg Starters</a>
+        <a href="#soups">Soups</a>
+        <a href="#veg-starters">Veg Starters</a>
+        <a href="#tandoori-chaap">Tandoori & Chaap</a>
+        <a href="#rolls">Rolls</a>
+        <a href="#veg-main-course">Veg Main Course</a>
+        <a href="#breads">Breads</a>
+    </div>
+
+    <!-- Menu Sections -->
+
+    <div id="veg-thali" class="menu-section">
+        <h2>Veg Thali</h2>
+        <table>
+            <tr><td>Dal Makhani + Paneer Lababdar, 2 Butter Naan / 4 Butter Roti, Raita</td><td class="price-col">₹120</td></tr>
+        </table>
+    </div>
+
+    <div id="deluxe-thali" class="menu-section">
+        <h2>Deluxe Thali</h2>
+        <table>
+            <tr><td>Dal Makhani + Shahi Paneer, Mix Veg, Raita, 2 Butter Naan / 4 Butter Roti</td><td class="price-col">₹160</td></tr>
+        </table>
+    </div>
+
+    <div id="non-veg-thali" class="menu-section">
+        <h2>Non-Veg Thali</h2>
+        <table>
+            <tr><td>Butter Chicken / Tawa Chicken, Dal Makhani + Paneer, Rice, Raita, 2 Butter Naan / 2 Lachha Parantha</td><td class="price-col">₹280</td></tr>
+            <tr><td>Butter Chicken / Tawa Chicken, Dal Makhani + Paneer + Mutton, Rice, Raita, 2 Butter Naan / 2 Lachha Parantha</td><td class="price-col">₹340</td></tr>
+        </table>
+    </div>
+
+    <div id="rice" class="menu-section">
+        <h2>Rice</h2>
+        <table>
+            <tr><td>Veg Pulao</td><td class="price-col">₹150</td></tr>
+            <tr><td>Plain Rice</td><td class="price-col">Half ₹100 / Full ₹130</td></tr>
+            <tr><td>Jeera Rice</td><td class="price-col">Half ₹110 / Full ₹140</td></tr>
+            <tr><td>Peas Pulao</td><td class="price-col">₹140</td></tr>
+        </table>
+    </div>
+
+    <div id="momos" class="menu-section">
+        <h2>Momos</h2>
+        <table>
+            <tr><td>Veg Momos</td><td class="price-col">₹100</td></tr>
+            <tr><td>Paneer Momos</td><td class="price-col">₹120</td></tr>
+            <tr><td>Chicken Momos</td><td class="price-col">₹120</td></tr>
+            <tr><td>Tandoori Momos</td><td class="price-col">₹140</td></tr>
+            <tr><td>Kurkure Momos</td><td class="price-col">₹140</td></tr>
+        </table>
+    </div>
+
+    <div id="non-veg-main-course" class="menu-section">
+        <h2>Non-Veg Main Course</h2>
+        <table>
+            <tr><td>Chicken Curry</td><td class="price-col">Half ₹370 / Full ₹570</td></tr>
+            <tr><td>Butter Chicken</td><td class="price-col">Half ₹390 / Full ₹610</td></tr>
+            <tr><td>Chicken Masala</td><td class="price-col">Half ₹380 / Full ₹590</td></tr>
+            <!-- Add remaining Non-Veg Main Course items here -->
+        </table>
+    </div>
+
+    <!-- Continue with other sections... -->
+
+</body>
+</html>
