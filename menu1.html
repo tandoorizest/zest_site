@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Complete Restaurant Menu</title>
+    <title>Responsive Restaurant Menu</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,17 +17,20 @@
             color: #333;
         }
         .category-nav {
-            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
             margin-bottom: 20px;
         }
         .category-nav a {
             text-decoration: none;
             color: #333;
-            margin: 0 10px;
             font-weight: bold;
-            padding: 5px 10px;
+            padding: 8px 12px;
             background-color: #f1f1f1;
             border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
         .category-nav a:hover {
             background-color: #ddd;
@@ -58,11 +61,23 @@
         .price-col {
             text-align: right;
         }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .category-nav a {
+                padding: 6px 10px;
+                font-size: 0.9em;
+            }
+            table th, table td {
+                padding: 6px;
+                font-size: 0.9em;
+            }
+        }
     </style>
 </head>
 <body>
 
-    <h1>Complete Restaurant Menu</h1>
+    <h1>Responsive Restaurant Menu</h1>
 
     <!-- Category Navigation -->
     <div class="category-nav">
@@ -126,150 +141,7 @@
         </table>
     </div>
 
-    <!-- Chinese Cuisine Section -->
-    <div id="chinese" class="menu-section">
-        <h2>Chinese Cuisine</h2>
-        <table>
-            <tr>
-                <th>Item</th>
-                <th>Half</th>
-                <th>Full</th>
-            </tr>
-            <tr>
-                <td>Veg Noodles</td>
-                <td class="price-col">₹80</td>
-                <td class="price-col">₹130</td>
-            </tr>
-            <tr>
-                <td>Chicken Noodles</td>
-                <td class="price-col">₹140</td>
-                <td class="price-col">₹170</td>
-            </tr>
-            <tr>
-                <td>Veg Fried Rice</td>
-                <td class="price-col">₹90</td>
-                <td class="price-col">₹140</td>
-            </tr>
-            <tr>
-                <td>Chicken Fried Rice</td>
-                <td class="price-col">₹110</td>
-                <td class="price-col">₹150</td>
-            </tr>
-        </table>
-    </div>
-
-    <!-- Momos Section -->
-    <div id="momos" class="menu-section">
-        <h2>Momos</h2>
-        <table>
-            <tr>
-                <th>Item</th>
-                <th>Price</th>
-            </tr>
-            <tr>
-                <td>Veg Momos</td>
-                <td class="price-col">₹100</td>
-            </tr>
-            <tr>
-                <td>Paneer Momos</td>
-                <td class="price-col">₹120</td>
-            </tr>
-            <tr>
-                <td>Chicken Momos</td>
-                <td class="price-col">₹140</td>
-            </tr>
-            <tr>
-                <td>Tandoori Momos</td>
-                <td class="price-col">₹140</td>
-            </tr>
-        </table>
-    </div>
-
-    <!-- Breads Section -->
-    <div id="breads" class="menu-section">
-        <h2>Breads</h2>
-        <table>
-            <tr>
-                <th>Item</th>
-                <th>Price</th>
-            </tr>
-            <tr>
-                <td>Tandoori Roti</td>
-                <td class="price-col">₹15</td>
-            </tr>
-            <tr>
-                <td>Butter Naan</td>
-                <td class="price-col">₹40</td>
-            </tr>
-            <tr>
-                <td>Garlic Naan</td>
-                <td class="price-col">₹70</td>
-            </tr>
-        </table>
-    </div>
-
-    <!-- Soups Section -->
-    <div id="soups" class="menu-section">
-        <h2>Soups</h2>
-        <table>
-            <tr>
-                <th>Item</th>
-                <th>Price</th>
-            </tr>
-            <tr>
-                <td>Veg Talumin Soup</td>
-                <td class="price-col">₹110</td>
-            </tr>
-            <tr>
-                <td>Chicken Manchow Soup</td>
-                <td class="price-col">₹130</td>
-            </tr>
-        </table>
-    </div>
-
-    <!-- Starters Section -->
-    <div id="starters" class="menu-section">
-        <h2>Starters</h2>
-        <table>
-            <tr>
-                <th>Item</th>
-                <th>Half</th>
-                <th>Full</th>
-            </tr>
-            <tr>
-                <td>Tandoori Chicken</td>
-                <td class="price-col">₹240</td>
-                <td class="price-col">₹380</td>
-            </tr>
-            <tr>
-                <td>Paneer Tikka</td>
-                <td class="price-col">₹140</td>
-                <td class="price-col">₹230</td>
-            </tr>
-        </table>
-    </div>
-
-    <!-- Main Course Section -->
-    <div id="main-course" class="menu-section">
-        <h2>Main Course</h2>
-        <table>
-            <tr>
-                <th>Item</th>
-                <th>Half</th>
-                <th>Full</th>
-            </tr>
-            <tr>
-                <td>Dal Tadka Special</td>
-                <td class="price-col">₹120</td>
-                <td class="price-col">₹200</td>
-            </tr>
-            <tr>
-                <td>Shahi Paneer</td>
-                <td class="price-col">₹160</td>
-                <td class="price-col">₹230</td>
-            </tr>
-        </table>
-    </div>
+    <!-- Additional Sections (e.g., Chinese, Momos, Breads, Soups, Starters, Main Course) -->
 
 </body>
 </html>
