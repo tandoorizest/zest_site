@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Restaurant Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .category-nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .category-nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 10px;
+            font-weight: bold;
+            padding: 5px 10px;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+        }
+        .category-nav a:hover {
+            background-color: #ddd;
+        }
+        .menu-section {
+            margin-bottom: 30px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            border-radius: 8px;
+        }
+        .menu-section h2 {
+            color: #444;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .price-col {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Complete Restaurant Menu</h1>
+
+    <!-- Category Navigation -->
+    <div class="category-nav">
+        <a href="#veg-thali">Veg Thali</a>
+        <a href="#deluxe-thali">Deluxe Thali</a>
+        <a href="#non-veg-thali">Non-Veg Thali</a>
+        <a href="#chinese">Chinese Cuisine</a>
+        <a href="#momos">Momos</a>
+        <a href="#breads">Breads</a>
+        <a href="#soups">Soups</a>
+        <a href="#starters">Starters</a>
+        <a href="#main-course">Main Course</a>
+    </div>
+
+    <!-- Veg Thali Section -->
+    <div id="veg-thali" class="menu-section">
+        <h2>Veg Thali</h2>
+        <table>
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Dal Makhani + Paneer Lababdar with 2 Butter Naan / 4 Butter Roti + Raita</td>
+                <td class="price-col">₹120</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Deluxe Thali Section -->
+    <div id="deluxe-thali" class="menu-section">
+        <h2>Deluxe Thali</h2>
+        <table>
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Dal Makhni + Shahi Paneer, Mix Veg, Raita, 2 Butter Naan / 4 Butter Roti</td>
+                <td class="price-col">₹160</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Non-Veg Thali Section -->
+    <div id="non-veg-thali" class="menu-section">
+        <h2>Non-Veg Thali</h2>
+        <table>
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Butter Chicken / Tawa Chicken + Dal Makhani, Paneer, Rice, Raita, 2 Butter Naan / 2 Lachha Parantha</td>
+                <td class="price-col">₹280</td>
+            </tr>
+            <tr>
+                <td>Butter Chicken / Tawa Chicken + Dal Makhani, Paneer, Mutton, Rice, Raita, 2 Butter Naan / 2 Lachha Parantha</td>
+                <td class="price-col">₹340</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Chinese Cuisine Section -->
+    <div id="chinese" class="menu-section">
+        <h2>Chinese Cuisine</h2>
+        <table>
+            <tr>
+                <th>Item</th>
+                <th>Half</th>
+                <th>Full</th>
+            </tr>
+            <tr>
+                <td>Veg Noodles</td>
+                <td class="price-col">₹80</td>
+                <td class="price-col">₹130</td>
+            </tr>
+            <tr>
+                <td>Chicken Noodles</td>
+                <td class="price-col">₹140</td>
+                <td class="price-col">₹170</td>
+            </tr>
+            <tr>
+                <td>Veg Fried Rice</td>
+                <td class="price-col">₹90</td>
+                <td class="price-col">₹140</td>
+            </tr>
+            <tr>
+                <td>Chicken Fried Rice</td>
+                <td class="price-col">₹110</td>
+                <td class="price-col">₹150</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Momos Section -->
+    <div id="momos" class="menu-section">
+        <h2>Momos</h2>
+        <table>
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Veg Momos</td>
+                <td class="price-col">₹100</td>
+            </tr>
+            <tr>
+                <td>Paneer Momos</td>
+                <td class="price-col">₹120</td>
+            </tr>
+            <tr>
+                <td>Chicken Momos</td>
+                <td class="price-col">₹140</td>
+            </tr>
+            <tr>
+                <td>Tandoori Momos</td>
+                <td class="price-col">₹140</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Breads Section -->
+    <div id="breads" class="menu-section">
+        <h2>Breads</h2>
+        <table>
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Tandoori Roti</td>
+                <td class="price-col">₹15</td>
+            </tr>
+            <tr>
+                <td>Butter Naan</td>
+                <td class="price-col">₹40</td>
+            </tr>
+            <tr>
+                <td>Garlic Naan</td>
+                <td class="price-col">₹70</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Soups Section -->
+    <div id="soups" class="menu-section">
+        <h2>Soups</h2>
+        <table>
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Veg Talumin Soup</td>
+                <td class="price-col">₹110</td>
+            </tr>
+            <tr>
+                <td>Chicken Manchow Soup</td>
+                <td class="price-col">₹130</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Starters Section -->
+    <div id="starters" class="menu-section">
+        <h2>Starters</h2>
+        <table>
+            <tr>
+                <th>Item</th>
+                <th>Half</th>
+                <th>Full</th>
+            </tr>
+            <tr>
+                <td>Tandoori Chicken</td>
+                <td class="price-col">₹240</td>
+                <td class="price-col">₹380</td>
+            </tr>
+            <tr>
+                <td>Paneer Tikka</td>
+                <td class="price-col">₹140</td>
+                <td class="price-col">₹230</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Main Course Section -->
+    <div id="main-course" class="menu-section">
+        <h2>Main Course</h2>
+        <table>
+            <tr>
+                <th>Item</th>
+                <th>Half</th>
+                <th>Full</th>
+            </tr>
+            <tr>
+                <td>Dal Tadka Special</td>
+                <td class="price-col">₹120</td>
+                <td class="price-col">₹200</td>
+            </tr>
+            <tr>
+                <td>Shahi Paneer</td>
+                <td class="price-col">₹160</td>
+                <td class="price-col">₹230</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
