@@ -14,30 +14,58 @@
             color: #333;
         }
 
-	.top-bar {
-            background-color: #f8c471; /* Adjust color as needed */
-            color: #000;
-            padding: 15px;
-            text-align: center;
-            font-size: 18px;
-            font-weight: 700; /* Bold font */
-            border-bottom: 2px solid #e67e22; /* Optional: bottom border for emphasis */
-        }
-        .top-bar a {
-            color: #000; /* Link color */
-            text-decoration: none; /* Remove underline */
-            margin: 0 10px; /* Spacing between links */
-        }
-        .top-bar a:hover {
-            text-decoration: underline; /* Underline on hover for better UX */
-        }
 
-	.offer {
-            font-size: 16px; /* Slightly smaller than the contact text */
-            font-weight: 400; /* Normal font weight */
-            color: #e67e22; /* Offer text color */
-            margin-top: 5px; /* Space above the offer text */
+	  .top-bar {
+        background-color: #f8c471; /* Yellow background */
+        color: #000; /* Black text for contact numbers */
+        padding: 15px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700; /* Bold font */
+        border-bottom: 2px solid #e67e22; /* Optional: bottom border for emphasis */
+    }
+    .top-bar a {
+        color: #e74c3c; /* Distinct red color for phone links */
+        text-decoration: none; /* Remove underline */
+        margin: 0 10px; /* Spacing between links */
+        transition: color 0.3s; /* Smooth transition for hover effect */
+    }
+    .top-bar a:hover {
+        color: #c0392b; /* Darker red on hover */
+    }
+    .offer {
+        font-size: 24px; /* Increased font size for better visibility */
+        font-weight: bold; /* Bold font for emphasis */
+        color: #ffffff; /* White text for contrast */
+        background: linear-gradient(45deg, #d35400, #f39c12); /* Gradient background */
+        padding: 10px; /* Increased padding */
+        border-radius: 10px; /* Rounded corners for the offer box */
+        margin-top: 5px; /* Space above the offer text */
+        display: inline-block; /* To ensure the background wraps around the text */
+        animation: flash 1s infinite alternate, bounce 0.5s infinite; /* Flashing and bouncing effects */
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    }
+
+    @keyframes flash {
+        0% {
+            opacity: 1; /* Fully visible */
         }
+        100% {
+            opacity: 0.7; /* Slightly transparent */
+        }
+    }
+
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0); /* Normal position */
+        }
+        40% {
+            transform: translateY(-5px); /* Bounce up */
+        }
+        60% {
+            transform: translateY(-3px); /* Slight bounce down */
+        }
+    }
 	    
         h1 {
             text-align: center;
@@ -121,13 +149,16 @@
     </div>
 
 	<div class="top-bar">
-        For ordering, contact: 
-        <a href="tel:+911234567890">+91 9266922206</a> | 
-        <a href="tel:+919876543210">+91 9266922207</a>
-	<div class="offer">
-            Free Home Delivery within 3 Km with ₹300 min. order!
-        </div>
+    For ordering, contact: 
+    <a href="https://wa.me/919266922206">+91 9266922206</a> | 
+    <a href="https://wa.me/919266922207">+91 9266922207</a><br>
+    <br>
+    Address: Shop no. 24, Classic residency, Raj Nagar Extension, NH-58, Ghaziabad-201003
+    <div class="offer">
+        🎉 Free Home Delivery within 3 Km with ₹300 min. order! 🎉
     </div>
+</div>
+
 
     <!-- Menu Sections -->
 	
