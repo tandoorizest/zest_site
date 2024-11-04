@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TandooriZest Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f3f4f6;
+            color: #333;
+        }
+
+
+	  .top-bar {
+        background-color: #f8c471; /* Yellow background */
+        color: #000; /* Black text for contact numbers */
+        padding: 15px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700; /* Bold font */
+        border-bottom: 2px solid #e67e22; /* Optional: bottom border for emphasis */
+    }
+    .top-bar a {
+        color: #e74c3c; /* Distinct red color for phone links */
+        text-decoration: none; /* Remove underline */
+        margin: 0 10px; /* Spacing between links */
+        transition: color 0.3s; /* Smooth transition for hover effect */
+    }
+    .top-bar a:hover {
+        color: #c0392b; /* Darker red on hover */
+    }
+    .offer {
+        font-size: 24px; /* Increased font size for better visibility */
+        font-weight: bold; /* Bold font for emphasis */
+        color: #ffffff; /* White text for contrast */
+        background: linear-gradient(45deg, #d35400, #f39c12); /* Gradient background */
+        padding: 10px; /* Increased padding */
+        border-radius: 10px; /* Rounded corners for the offer box */
+        margin-top: 5px; /* Space above the offer text */
+        display: inline-block; /* To ensure the background wraps around the text */
+        animation: flash 1s infinite alternate, bounce 0.5s infinite; /* Flashing and bouncing effects */
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    }
+
+    @keyframes flash {
+        0% {
+            opacity: 1; /* Fully visible */
+        }
+        100% {
+            opacity: 0.7; /* Slightly transparent */
+        }
+    }
+
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0); /* Normal position */
+        }
+        40% {
+            transform: translateY(-5px); /* Bounce up */
+        }
+        60% {
+            transform: translateY(-3px); /* Slight bounce down */
+        }
+    }
+	    
+        h1 {
+            text-align: center;
+            color: #D95A33;
+            font-size: 2.5em;
+        }
+        .category-nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .category-nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 10px 15px;
+            background-color: #D95A33;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .category-nav a:hover {
+            background-color: #b0472b;
+        }
+        .menu-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .menu-section h2 {
+            color: #D95A33;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #D95A33;
+            padding-bottom: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .price-col {
+            text-align: right;
+            font-weight: bold;
+            color: #D95A33;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>TandooriZest Menu</h1>
+
+    <!-- Category Navigation -->
+    <div class="category-nav">
+	<a href="#soups">Soups</a>
+	<a href="#chinese">Chinese Cuisine</a>
+	<a href="#noodles">Noodles</a>
+	<a href="#rolls">Rolls</a>
+	<a href="#momos">Momos</a>
+	<a href="#veg-starters">Veg Starters</a>
+	<a href="#non-veg-starters">Non-Veg Starters</a>
+	<a href="#veg-main-course">Veg Main Course</a>
+	<a href="#non-veg-main-course">Non-Veg Main Course</a>
+	<a href="#mutton-dishes">Mutton Dishes</a>
+	<a href="#breads-rice">Breads & Rice</a>
+        <a href="#veg-thali">Veg Thali</a>
+        <a href="#deluxe-thali">Deluxe Thali</a>
+        <a href="#non-veg-thali">Non-Veg Thali</a>
+                
+    </div>
+
+	<div class="top-bar">
+    For ordering, contact: 
+    <a href="https://wa.me/919266922206">+91 9266922206</a> | 
+    <a href="https://wa.me/919266922207">+91 9266922207</a><br>
+    <br>
+    Address: Shop no. 24, Classic residency, Raj Nagar Extension, NH-58, Ghaziabad-201003
+    <div class="offer">
+        🎉 Free Home Delivery within 3 Km with ₹300 min. order! 🎉
+    </div>
+</div>
+
+  <div class="top-bar2" style="background-color: #000; color: #d4af37; padding: 15px; text-align: center; border-bottom: 2px solid #d4af37;">
+    <h2 style="font-family: 'Times New Roman', serif; font-weight: normal;">For Ordering, Contact:</h2>
+    <a href="https://wa.me/911234567890" style="color: #fff; font-weight: bold; text-decoration: none; font-size: 18px;">+91 12345 67890</a> | 
+    <a href="https://wa.me/919876543210" style="color: #fff; font-weight: bold; text-decoration: none; font-size: 18px;">+91 98765 43210</a><br>
+    <p style="margin: 10px 0; font-size: 16px;">Address: 123 Tandoori Lane, Flavor Town, India</p>
+    <div class="offer" style="background-color: #d4af37; color: #000; padding: 10px; border-radius: 5px; display: inline-block; font-weight: bold; animation: flash 1s infinite; text-shadow: 1px 1px 2px #fff;">
+        🎉 Free Home Delivery within 3 Km with ₹300 min. order! 🎉
+    </div>
+</div>
+
+<style>
+@keyframes flash {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+</style>
+
+
+    <!-- Menu Sections -->
+	
+	<div id="soups" class="menu-section">
+    <h2>Soups</h2>
+    <table>
+        <tr><td>Veg Talumin Soup</td><td class="price-col">₹110</td></tr>
+        <tr><td>Manchow Soup</td><td class="price-col">₹110</td></tr>
+        <tr><td>Hot & Sour Soup</td><td class="price-col">₹110</td></tr>
+        <tr><td>Chicken Manchow Soup</td><td class="price-col">₹130</td></tr>
+        <tr><td>Chicken Hot & Sour Soup</td><td class="price-col">₹130</td></tr>
+        <tr><td>Chicken Talumin Soup</td><td class="price-col">₹140</td></tr>
+    </table>
+</div>
+
+<div id="chinese" class="menu-section">
+    <h2>Chinese</h2>
+    <table>
+        <tr><td>Chilli Potato</td><td class="price-col">Half ₹70 / Full ₹110</td></tr>
+        <tr><td>Honey Chilli Potato</td><td class="price-col">Half ₹80 / Full ₹110</td></tr>
+        <tr><td>Chilli Gobhi</td><td class="price-col">₹190</td></tr>
+        <tr><td>Veg Spring Roll</td><td class="price-col">₹110</td></tr>
+        <tr><td>Paneer Chilli (Dry/Gravy)</td><td class="price-col">₹150/₹240</td></tr>
+        <tr><td>Chilli Mushroom</td><td class="price-col">₹240</td></tr>
+        <tr><td>Paneer Manchurian (Dry/Gravy)</td><td class="price-col">₹150/₹240</td></tr>
+        <tr><td>Veg Manchurian (Dry/Gravy)</td><td class="price-col">₹100/₹170</td></tr>
+        <tr><td>Chilli Chaap</td><td class="price-col">₹200</td></tr>
+        <tr><td>French Fry</td><td class="price-col">₹90</td></tr>
+	<tr><td>Singapuri Rice</td><td class="price-col">Half ₹90 / Full ₹140</td></tr>
+        <tr><td>Veg Fried Rice</td><td class="price-col">Half ₹90 / Full ₹140</td></tr>
+        <tr><td>Chicken Fried Rice</td><td class="price-col">Half ₹120 / Full ₹210</td></tr>
+        <tr><td>Chicken Egg Fried Rice</td><td class="price-col">Half ₹150 / Full ₹260</td></tr>
+    </table>
+</div>
+
+<div id="noodles" class="menu-section">
+    <h2>Noodles</h2>
+    <table>
+        <tr><td>Veg Noodles</td><td class="price-col">Half ₹80 / Full ₹130</td></tr>
+        <tr><td>Hakka Noodle</td><td class="price-col">Half ₹90 / Full ₹140</td></tr>
+        <tr><td>Chilli Garlic Noodle</td><td class="price-col">Half ₹90 / Full ₹140</td></tr>
+        <tr><td>Chicken Noodles</td><td class="price-col">Half ₹110 / Full ₹170</td></tr>
+    </table>
+</div>
+
+<div id="momos" class="menu-section">
+        <h2>Momos</h2>
+        <table>
+            <tr><td>Veg Momos</td><td class="price-col">₹100</td></tr>
+            <tr><td>Paneer Momos</td><td class="price-col">₹120</td></tr>
+            <tr><td>Chicken Momos</td><td class="price-col">₹120</td></tr>
+            <tr><td>Tandoori Momos</td><td class="price-col">₹140</td></tr>
+            <tr><td>Kurkure Momos</td><td class="price-col">₹140</td></tr>
+        </table>
+    </div>
+
+	
+	<div id="veg-starters" class="menu-section">
+    <h2>Veg Starter</h2>
+    <table>
+        <tr><td>Tandoori Chaap</td><td class="price-col">Half ₹110 / Full ₹200</td></tr>
+        <tr><td>Malai Chaap</td><td class="price-col">Half ₹140 / Full ₹220</td></tr>
+        <tr><td>Achari Chaap</td><td class="price-col">Half ₹130 / Full ₹240</td></tr>
+        <tr><td>Stuffed Chaap</td><td class="price-col">Half ₹140 / Full ₹230</td></tr>
+        <tr><td>Paneer Tikka</td><td class="price-col">Half ₹140 / Full ₹230</td></tr>
+        <tr><td>Malai Paneer Tikka</td><td class="price-col">Half ₹150 / Full ₹240</td></tr>
+        <tr><td>Mushroom Tikka</td><td class="price-col">₹240</td></tr>
+        <tr><td>Dahi ke Kabab</td><td class="price-col">₹230</td></tr>
+        <tr><td>Dahi ke Sholey</td><td class="price-col">₹230</td></tr>
+        <tr><td>Peanut Masala</td><td class="price-col">₹120</td></tr>
+    </table>
+</div>
+
+<div id="non-veg-starters" class="menu-section">
+    <h2>Non-Veg Starters</h2>
+    <table>
+        <tr><td>Tandoori Chicken</td><td class="price-col">Half ₹240 / Full ₹380</td></tr>
+        <tr><td>Afghani Chicken</td><td class="price-col">Half ₹250 / Full ₹390</td></tr>
+        <tr><td>Chicken Tikka</td><td class="price-col">Half ₹180 / Full ₹270</td></tr>
+        <tr><td>Chicken Malai Tikka</td><td class="price-col">Half ₹190 / Full ₹280</td></tr>
+        <tr><td>Mutton Seekh Kabab</td><td class="price-col">Half ₹200 / Full ₹280</td></tr>
+        <tr><td>Chicken Seekh Kabab</td><td class="price-col">Half ₹180 / Full ₹270</td></tr>
+        <tr><td>Tandoori Wings</td><td class="price-col">₹180</td></tr>
+        <tr><td>Tandoori Tangri (4 pieces)</td><td class="price-col">₹240</td></tr>
+    </table>
+</div>
+
+<div id="rolls" class="menu-section">
+    <h2>Rolls</h2>
+    <table>
+        <tr><td>Tandoori Chaap Roll</td><td class="price-col">₹170</td></tr>
+        <tr><td>Tandoori Malai Chaap Roll</td><td class="price-col">₹180</td></tr>
+        <tr><td>Paneer Malai Tikka Roll</td><td class="price-col">₹190</td></tr>
+        <tr><td>Paneer Tikka Roll</td><td class="price-col">₹190</td></tr>
+        <tr><td>Chicken Tikka Roll</td><td class="price-col">₹180</td></tr>
+        <tr><td>Chicken Malai Tikka Roll</td><td class="price-col">₹190</td></tr>
+        <tr><td>Mutton Seek Roll</td><td class="price-col">₹190</td></tr>
+        <tr><td>Chicken Seek Roll</td><td class="price-col">₹160</td></tr>
+    </table>
+</div>
+
+    <div id="veg-thali" class="menu-section">
+        <h2>Veg Thali</h2>
+        <table>
+            <tr><td>Dal Makhani + Paneer Lababdar, 2 Butter Naan / 4 Butter Roti, Raita</td><td class="price-col">₹120</td></tr>
+        </table>
+    </div>
+
+    <div id="deluxe-thali" class="menu-section">
+        <h2>Deluxe Thali</h2>
+        <table>
+            <tr><td>Dal Makhani + Shahi Paneer, Mix Veg, Raita, 2 Butter Naan / 4 Butter Roti</td><td class="price-col">₹160</td></tr>
+        </table>
+    </div>
+
+    <div id="non-veg-thali" class="menu-section">
+        <h2>Non-Veg Thali</h2>
+        <table>
+            <tr><td>Butter Chicken / Tawa Chicken, Dal Makhani + Paneer, Rice, Raita, 2 Butter Naan / 2 Lachha Parantha</td><td class="price-col">₹280</td></tr>
+            <tr><td>Butter Chicken / Tawa Chicken, Dal Makhani + Paneer + Mutton, Rice, Raita, 2 Butter Naan / 2 Lachha Parantha</td><td class="price-col">₹340</td></tr>
+        </table>
+    </div>
+
+    
+
+
+    
+    
+
+    <div id="veg-main-course" class="menu-section">
+    <h2>Veg Main Course</h2>
+    <table>
+        <tr><td>Dal Tadka Special</td><td class="price-col">Half ₹120 / Full ₹200</td></tr>
+        <tr><td>Dal Makhani Special</td><td class="price-col">Half ₹140 / Full ₹220</td></tr>
+        <tr><td>Shahi Paneer</td><td class="price-col">Half ₹160 / Full ₹230</td></tr>
+        <tr><td>Kadhai Paneer</td><td class="price-col">Half ₹160 / Full ₹230</td></tr>
+        <tr><td>Paneer Lababdar</td><td class="price-col">Half ₹160 / Full ₹230</td></tr>
+        <tr><td>Paneer Do Pyaza</td><td class="price-col">Half ₹160 / Full ₹230</td></tr>
+        <tr><td>Paneer Butter Masala</td><td class="price-col">Half ₹160 / Full ₹230</td></tr>
+        <tr><td>Paneer Tikka Masala</td><td class="price-col">Half ₹160 / Full ₹230</td></tr>
+        <tr><td>Palak Paneer</td><td class="price-col">Half ₹140 / Full ₹210</td></tr>
+        <tr><td>Paneer Bhurji</td><td class="price-col">Half ₹160 / Full ₹230</td></tr>
+        <tr><td>Matar Mushroom</td><td class="price-col">Half ₹140 / Full ₹210</td></tr>
+        <tr><td>Mushroom Masala</td><td class="price-col">Half ₹140 / Full ₹220</td></tr>
+        <tr><td>Soya Chaap</td><td class="price-col">Half ₹120 / Full ₹200</td></tr>
+        <tr><td>Mix Veg</td><td class="price-col">Half ₹120 / Full ₹190</td></tr>
+        <tr><td>Chana Masala</td><td class="price-col">Half ₹130 / Full ₹200</td></tr>
+    </table>
+</div>
+
+<div id="non-veg-main-course" class="menu-section">
+    <h2>Non-Veg Main Course</h2>
+    <table>
+        <tr><td>Chicken Curry</td><td class="price-col">Half ₹370 / Full ₹570</td></tr>
+        <tr><td>Butter Chicken</td><td class="price-col">Half ₹390 / Full ₹610</td></tr>
+        <tr><td>Chicken Masala</td><td class="price-col">Half ₹380 / Full ₹590</td></tr>
+        <tr><td>Chicken Kali Mirch</td><td class="price-col">Half ₹390 / Full ₹600</td></tr>
+        <tr><td>Chicken-Do-Pyaza</td><td class="price-col">Half ₹390 / Full ₹600</td></tr>
+        <tr><td>Chicken Rara</td><td class="price-col">Half ₹410 / Full ₹630</td></tr>
+        <tr><td>Chicken Labadar</td><td class="price-col">Half ₹390 / Full ₹600</td></tr>
+        <tr><td>Kadhai Chicken</td><td class="price-col">Half ₹390 / Full ₹600</td></tr>
+        <tr><td>Chicken Handi</td><td class="price-col">Half ₹410 / Full ₹630</td></tr>
+        <tr><td>Chicken Punjabi</td><td class="price-col">Half ₹410 / Full ₹630</td></tr>
+    </table>
+</div>
+
+<div id="mutton-dishes" class="menu-section">
+    <h2>Mutton Dishes</h2>
+    <table>
+        <tr><td>Mutton Curry</td><td class="price-col">Half ₹280 / Full ₹480</td></tr>
+        <tr><td>Mutton Masala</td><td class="price-col">Half ₹300 / Full ₹490</td></tr>
+        <tr><td>Mutton Rara</td><td class="price-col">Half ₹320 / Full ₹520</td></tr>
+        <tr><td>Mutton Handi</td><td class="price-col">Half ₹330 / Full ₹540</td></tr>
+    </table>
+</div>
+
+    <div id="breads-rice" class="menu-section">
+    <h2>Breads & Rice</h2>
+    <table>
+        <tr><td>Tandoori Roti</td><td class="price-col">₹15</td></tr>
+        <tr><td>Tandoori Butter Roti</td><td class="price-col">₹20</td></tr>
+        <tr><td>Rumali Roti</td><td class="price-col">₹10</td></tr>
+        <tr><td>Missi Roti</td><td class="price-col">₹30</td></tr>
+        <tr><td>Lachha Parantha</td><td class="price-col">₹40</td></tr>
+        <tr><td>Pudina Parantha</td><td class="price-col">₹40</td></tr>
+        <tr><td>Green Chilli Parantha</td><td class="price-col">₹40</td></tr>
+        <tr><td>Aloo Parantha</td><td class="price-col">₹50</td></tr>
+        <tr><td>Aloo Pyaz Parantha</td><td class="price-col">₹60</td></tr>
+        <tr><td>Gobhi Parantha</td><td class="price-col">₹50</td></tr>
+        <tr><td>Paneer Parantha</td><td class="price-col">₹70</td></tr>
+        <tr><td>Paneer Pyaz Parantha</td><td class="price-col">₹80</td></tr>
+        <tr><td>Stuffed Parantha</td><td class="price-col">₹80</td></tr>
+        <tr><td>Plain Naan</td><td class="price-col">₹30</td></tr>
+        <tr><td>Butter Naan</td><td class="price-col">₹40</td></tr>
+        <tr><td>Aloo Naan</td><td class="price-col">₹60</td></tr>
+        <tr><td>Gobhi Naan</td><td class="price-col">₹60</td></tr>
+        <tr><td>Stuffed Naan</td><td class="price-col">₹80</td></tr>
+        <tr><td>Paneer Naan</td><td class="price-col">₹80</td></tr>
+        <tr><td>Garlic Naan</td><td class="price-col">₹70</td></tr>
+	<tr><td>Veg Pulao</td><td class="price-col">₹150</td></tr>
+        <tr><td>Plain Rice</td><td class="price-col">Half ₹100 / Full ₹130</td></tr>
+        <tr><td>Jeera Rice</td><td class="price-col">Half ₹110 / Full ₹140</td></tr>
+        <tr><td>Peas Pulao</td><td class="price-col">₹140</td></tr>
+    </table>
+</div>
+
+
+    
+    <!-- Continue with other sections... -->
+
+</body>
+</html>
