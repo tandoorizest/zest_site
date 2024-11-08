@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TandooriZest Menu</title>
     <style>
+	    html {
+    scroll-behavior: smooth;
+}
+@media (max-width: 600px) {
+    .category-nav a {
+        font-size: 14px;
+        padding: 8px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    .price-col, th, td {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
         body {
             font-family: Arial, sans-serif;
             max-width: 900px;
@@ -25,7 +42,7 @@
         border-bottom: 2px solid #e67e22; /* Optional: bottom border for emphasis */
     }
     .top-bar a {
-        color: #e74c3c; /* Distinct red color for phone links */
+        color: #ffffff; /* Distinct red color for phone links */
         text-decoration: none; /* Remove underline */
         margin: 0 10px; /* Spacing between links */
         transition: color 0.3s; /* Smooth transition for hover effect */
@@ -46,26 +63,8 @@
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
     }
 
-    @keyframes flash {
-        0% {
-            opacity: 1; /* Fully visible */
-        }
-        100% {
-            opacity: 0.7; /* Slightly transparent */
-        }
-    }
+  
 
-    @keyframes bounce {
-        0%, 20%, 50%, 80%, 100% {
-            transform: translateY(0); /* Normal position */
-        }
-        40% {
-            transform: translateY(-5px); /* Bounce up */
-        }
-        60% {
-            transform: translateY(-3px); /* Slight bounce down */
-        }
-    }
 	    
         h1 {
             text-align: center;
@@ -124,6 +123,9 @@
             background-color: #f1f1f1;
         }
     </style>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
 </head>
 <body>
 
@@ -148,16 +150,34 @@
                 
     </div>
 
-	<div class="top-bar">
-    For ordering, contact: 
-    <a href="https://wa.me/919266922206">+91 9266922206</a> | 
-    <a href="https://wa.me/919266922207">+91 9266922207</a><br>
-    <br>
-    Address: Shop no. 24, Classic residency, Raj Nagar Extension, NH-58, Ghaziabad-201003
-    <div class="offer">
+
+<div class="top-bar2" style="background-color: #000; color: #d4af37; padding: 15px; text-align: center; border-bottom: 2px solid #d4af37;">
+    <h2 style="font-family: 'Times New Roman', serif; font-weight: normal;">For Ordering, Contact:</h2>
+    
+    <a href="https://wa.me/919266922206" style="color: #fff; font-weight: bold; text-decoration: none; font-size: 20px;">
+        <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" width="32" height="32" style="vertical-align: middle; margin-right: 5px;">
+        9266922206
+    </a> | 
+    <a href="https://wa.me/919266922207" style="color: #fff; font-weight: bold; text-decoration: none; font-size: 20px;">
+        <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" width="32" height="32" style="vertical-align: middle; margin-right: 5px;">
+        9266922207
+    </a><br>
+
+    <p style="margin: 10px 0; font-size: 16px;">Address: Shop no. 24, Classic residency, Raj Nagar Extension, NH-58, Ghaziabad-201003</p>
+
+    <div class="offer" style="background-color: #d4af37; color: #fff; padding: 10px; border-radius: 5px; display: inline-block; font-weight: bold; animation: flash 1s infinite; ">
         🎉 Free Home Delivery within 3 Km with ₹300 min. order! 🎉
     </div>
 </div>
+
+
+
+
+
+
+<style>
+
+</style>
 
 
     <!-- Menu Sections -->
